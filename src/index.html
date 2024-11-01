@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Widget</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <br>
+        <nav>
+            <ul>
+                <a href="index.html"><img src="assets/icon.png" alt="logo"></a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plans.html">Plans</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="bg-section">
+          <div class="bg-content">
+              <h1>The World Is Filled With Adventure,<br>All You Have To Do Is Find It.</h1><h2>Use the weather widget below to plan your adventures!</h2>
+              <a href="plans.html" class="bg-button">Start Planning</a>
+          </div>
+      </div>
+      <section class="wrapper">
+        <div class="container">
+            <div class="weather-side day">
+                <div class="weather-gradient"></div>
+                <div class="date-container">
+                    <h2 class="date-dayname">Thursday</h2>
+                    <span class="date-day">15 Jun 2023</span>
+                    <span class="location-icon"></span>
+                    <span class="location">Paris, France</span>
+                </div>
+                <div class="weather-container">
+                    <img class="weather-icon" src="https://cdn.weatherapi.com/weather/64x64/day/116.png">
+                    <h1 class="weather-temp">29°C</h1>
+                    <h3 class="weather-desc">Sunny</h3>
+                </div>
+            </div>
+            <div class="info-side">
+                <div class="today-info-container">
+                    <div class="today-info">
+                        <div class="precipitation"> <span class="title">PRECIPITATION</span><span class="value">0
+                                %</span>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="humidity"> <span class="title">HUMIDITY</span><span class="value">34 %</span>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="wind"> <span class="title">WIND</span><span class="value">0 km/h</span>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="week-container">
+                    <ul class="week-list">
+                        <li>
+                            <img class="day-icon" src="https://cdn.weatherapi.com/weather/64x64/night/116.png" alt="">
+                            <span class="day-name">Tue</span><span class="day-temp">29°C</span></li>
+                        <li><img class="day-icon" src="https://cdn.weatherapi.com/weather/64x64/night/119.png" alt="">
+                            <span class="day-name">Wed</span><span
+                                class="day-temp">21°C</span></li>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+                <div class="location-container">
+                    <form class="location-form">
+                        <input id="search-input" type="text" placeholder="Enter Location">
+                        <button class="location-button"><span>Change location</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <section class="events-section">
+          <h2>Suggested Activities on A Sunny Day</h2>
+          <div class="container1">
+              <div class="event-card">
+                  <div class="status">HIKING</div>
+                  <img id="img1"  src="assets/hiking.jpg" alt="billie eilish">
+              </div>
+              <div class="event-card">
+                  <div class="status">PARAGLIDING</div>
+                  <img id="img2"  src="assets/paragliding.jpg" alt="coldplay">
+              </div>
+              <div class="event-card">
+                  <div class="status sell">MOUNTAIN BIKING</div>
+                  <img id="img3"  src="assets/mountain.jpg" alt="theweeknd">
+              </div>
+          </div>
+          <div class="container1">
+            <div class="event-card">
+                <div class="status">JOGGING</div>
+                <img id="img1"  src="assets/jog.jpg" alt="billie eilish">
+                
+            </div>
+            <div class="event-card">
+                <div class="status">ROCK CLIMBING</div>
+                <img id="img2"  src="assets/rock.jpg" alt="coldplay">
+                
+            </div>
+            <div class="event-card">
+                <div class="status sell">FISHING</div>
+                <img id="img3"  src="assets/fish.jpg" alt="theweeknd">
+                
+            </div>
+        </div>
+      </section>
+      
+  </main>
+  <footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <a href="index.html"><img src="assets/icon.png" alt="logo"></a>
+            <p> A-12-5, Block A, Plaza D'Wangsa,<br>
+                Jalan Wangsa Delima 12, Wangsa Maju,<br>
+                56000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur
+            </p>
+        </div>
+        <div class="footer-right">
+            <h3>For any weather related issues you may contact us via:</h3>
+            <p><img src="assets/email.png"><a href="support@weatherwise.my"> support@weatherwise.my</a></p>
+            <p><img src="assets/smartphone.png"> 011 133 2840</p>
+            <p><img src="assets/telephone.png"> 03 6947 0179</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© Copyright 2024 WeatherWise Sdn. Bhd. All Rights Reserved</p>
+        <div class="footer-links">
+            <a href="#">Terms and conditions</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Refund policy</a>
+        </div>
+    </div>    
+    <div class="scroll-up">
+        <a href="#top">↑</a>
+    </div>
+</footer>
+
+    
+
+    <script src="dev.env.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

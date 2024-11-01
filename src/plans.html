@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans</title>
+    <link rel="stylesheet" href="plans.css">
+</head>
+
+<body>
+  <header>
+    <br>
+        <nav>
+            <ul>
+                <a href="index.html"><img src="assets/icon.png" alt="logo"></a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plans.html">Plans</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="user-form">
+        <h2>Activity Input Form</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="tel">Telephone Number:</label>
+        <input type="tel" id="tel" name="tel" required>
+    
+        <label for="activity">Activity:</label>
+        <input type="text" id="activity" name="activity" required>
+    
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+    
+        <label for="notes">Item Checklist:</label>
+        <textarea id="notes" name="notes" rows="3" required></textarea>
+    
+        <button id="submit">Submit</button>
+        <button id="edit" style="display: none;">Edit</button>
+        <button id="delete" style="display: none;">Delete</button>
+    </div>
+    
+    <div class="output" id="output" style="display: none;">
+        <h3>User Input Summary:</h3>
+        <p><strong>Name:</strong> <span id="displayName"></span></p>
+        <p><strong>Telephone:</strong> <span id="displayTel"></span></p>
+        <p><strong>Activity:</strong> <span id="displayActivity"></span></p>
+        <p><strong>Date:</strong> <span id="displayDate"></span></p>
+        <p><strong>Item Checklist:</strong> <span id="displayNotes"></span></p>
+    </div>
+    
+    
+
+  <footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <a href="index.html"><img src="assets/icon.png" alt="logo"></a>
+            <p> A-12-5, Block A, Plaza D'Wangsa,<br>
+                Jalan Wangsa Delima 12, Wangsa Maju,<br>
+                56000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur
+            </p>
+        </div>
+        <div class="footer-right">
+            <h3>For any weather related issues you may contact us via:</h3>
+            <p><img src="assets/email.png"><a href="support@weatherwise.my"> support@weatherwise.my</a></p>
+            <p><img src="assets/smartphone.png"> 011 133 2840</p>
+            <p><img src="assets/telephone.png"> 03 6947 0179</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© Copyright 2024 WeatherWise Sdn. Bhd. All Rights Reserved</p>
+        <div class="footer-links">
+            <a href="#">Terms and conditions</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Refund policy</a>
+        </div>
+    </div>    
+    <div class="scroll-up">
+        <a href="#top">↑</a>
+    </div>
+</footer>
+
+    
+
+    <script src="dev.env.js"></script>
+    <script src="plans.js"></script>
+</body>
+
+</html>
